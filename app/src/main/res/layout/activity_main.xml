@@ -14,10 +14,10 @@
             android:orientation="horizontal" android:paddingTop="10dp"
             android:gravity="center">
         <TextView
-                android:text="लांबी  "
-                android:layout_width="wrap_content"
+                android:text="लांबी (फूट)"
+                android:layout_width="150sp"
                 android:layout_height="wrap_content"
-                android:id="@+id/textViewLength" android:textSize="20sp" android:textStyle="bold"
+                android:id="@+id/textViewLength" android:textSize="25sp" android:textStyle="bold"
                 android:gravity="center"/>
         <TextView
                 android:text=": "
@@ -31,7 +31,7 @@
                 android:inputType="number"
                 android:ems="10"
                 android:id="@+id/inputLength" android:gravity="center"
-                android:background="@drawable/text_view_border"/>
+                android:background="@drawable/text_view_border" android:padding="3dp"/>
     </LinearLayout>
 
     <LinearLayout
@@ -40,10 +40,10 @@
             android:orientation="horizontal" android:gravity="center" android:paddingTop="10dp"
     >
         <TextView
-                android:text="रुंदी  "
-                android:layout_width="wrap_content"
+                android:text="रुंदी (फूट)"
+                android:layout_width="150sp"
                 android:layout_height="wrap_content"
-                android:id="@+id/textViewWidth" android:textSize="20sp" android:textStyle="bold"
+                android:id="@+id/textViewWidth" android:textSize="25sp" android:textStyle="bold"
                 android:gravity="center"/>
         <TextView
                 android:text=": "
@@ -58,7 +58,7 @@
                 android:inputType="number"
                 android:ems="10"
                 android:id="@+id/inputWidth" android:gravity="center"
-                android:background="@drawable/text_view_border"/>
+                android:background="@drawable/text_view_border" android:padding="3dp"/>
     </LinearLayout>
 
     <LinearLayout
@@ -67,10 +67,10 @@
             android:orientation="horizontal" android:gravity="center" android:paddingTop="10dp"
     >
         <TextView
-                android:text="दर   "
-                android:layout_width="wrap_content"
+                android:text="दर (प्रति गुंठा ) "
+                android:layout_width="150sp"
                 android:layout_height="wrap_content"
-                android:id="@+id/textViewRate" android:textSize="20sp" android:textStyle="bold"
+                android:id="@+id/textViewRate" android:textSize="25sp" android:textStyle="bold"
                 android:gravity="center"/>
         <TextView
                 android:text=": "
@@ -85,7 +85,7 @@
                 android:inputType="number"
                 android:ems="10"
                 android:id="@+id/inputRate" android:gravity="center"
-                android:background="@drawable/text_view_border"/>
+                android:background="@drawable/text_view_border" android:padding="3dp"/>
     </LinearLayout>
 
     <LinearLayout
@@ -122,8 +122,8 @@
                 android:text="आपली गणना केलेली किंमत आहे "
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/textViewResult" android:textSize="25sp"
-                android:gravity="center"/>
+                android:id="@+id/textViewResult" android:textSize="30sp"
+                android:gravity="center" android:layout_marginBottom="10dp"/>
     </LinearLayout>
 
     <LinearLayout
