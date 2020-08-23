@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">GunthaRateCalculator</string>
+    <string-array name="length_array">
+        <item>Feet</item>
+        <item>Meter</item>
+    </string-array>
+    <string-array name="rate_array">
+        <item>Per Guntha</item>
+        <item>Per Pand</item>
+        <item>Per Acre</item>
+    </string-array>
+</resources>
