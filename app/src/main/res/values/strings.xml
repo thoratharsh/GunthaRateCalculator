@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">GunthaRateCalculator</string>
+    <string name="app_name"> गुंठा दर गणक </string>
     <string-array name="length_array">
         <item>Feet</item>
         <item>Meter</item>
