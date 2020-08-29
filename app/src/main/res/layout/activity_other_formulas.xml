@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".OtherFormulasActivity" android:orientation="vertical" android:layout_marginTop="10sp">
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:gravity="center">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/textViewForm1" android:layout_weight="1"
+                android:textSize="25dp" android:gravity="center" android:text="@string/formula1"
+                android:textColor="@android:color/holo_blue_dark"/>
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                  android:orientation="horizontal" android:layout_marginTop="10dp">
+        <TextView
+                android:text="@string/formula2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/textViewForm2" android:textSize="25dp"
+                android:gravity="center" android:textColor="@android:color/holo_blue_dark"/>
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                  android:orientation="horizontal" android:layout_marginTop="10dp">
+        <TextView
+                android:text="@string/formula3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/textViewForm3" android:textSize="25dp"
+                android:gravity="center" android:textColor="@android:color/holo_blue_dark"/>
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                  android:orientation="horizontal" android:layout_marginTop="10dp">
+        <TextView
+                android:text="@string/formula4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/textViewForm4" android:textSize="25dp"
+                android:gravity="center" android:textColor="@android:color/holo_blue_dark"/>
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                  android:orientation="horizontal" android:layout_marginTop="10dp">
+        <TextView
+                android:text="@string/formula5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/textViewForm5" android:textSize="25dp"
+                android:gravity="center" android:textColor="@android:color/holo_blue_dark"/>
+    </LinearLayout>
+
+
+</LinearLayout>

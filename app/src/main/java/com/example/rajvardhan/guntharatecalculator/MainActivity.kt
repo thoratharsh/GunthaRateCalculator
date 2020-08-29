@@ -1,6 +1,7 @@
 package com.example.rajvardhan.guntharatecalculator
 
 import android.content.Context
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.design.widget.Snackbar
@@ -14,12 +15,19 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         calculateButton.setOnClickListener { view ->
-            if(inputLength.text.toString().isEmpty()){
+            if (inputLength.text.toString().isEmpty() && inputWidth.text.toString().isEmpty() && inputRate.text.toString().isEmpty()){
+                textViewError.text = "कृपया योग्य लांबी, रुंदी व दर भरा "
+            } else if (inputLength.text.toString().isEmpty() && inputWidth.text.toString().isEmpty()){
+                textViewError.text = "कृपया योग्य लांबी व रुंदी भरा "
+            } else if (inputWidth.text.toString().isEmpty() && inputRate.text.toString().isEmpty()){
+                textViewError.text = "कृपया योग्य रुंदी व दर भरा "
+            } else if (inputLength.text.toString().isEmpty() && inputRate.text.toString().isEmpty()){
+                textViewError.text = "कृपया योग्य लांबी व दर भरा "
+            } else if(inputLength.text.toString().isEmpty()){
                 textViewError.text = "कृपया योग्य लांबी भरा "
-            }
-            else if (inputWidth.text.toString().isEmpty()){
+            } else if (inputWidth.text.toString().isEmpty()){
                 textViewError.text = "कृपया योग्य रुंदी भरा "
-            }else if (inputRate.text.toString().isEmpty()){
+            } else if (inputRate.text.toString().isEmpty()){
                 textViewError.text = "कृपया योग्य दर भरा"
             } else {
                 textViewError.text = ""
@@ -48,5 +56,15 @@ class MainActivity : AppCompatActivity() {
             textViewPrice.text = ""
             textViewError.text = ""
         }
+
+        otherFormulasButton.setOnClickListener { view ->
+            openOtherFormulasActivity()
+        }
+
+    }
+
+    private fun openOtherFormulasActivity(){
+        val intent = Intent(this, OtherFormulasActivity::class.java)
+        startActivity(intent)
     }
 }

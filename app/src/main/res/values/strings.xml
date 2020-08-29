@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name"> गुंठा दर गणक </string>
+    <string name="app_name">गुंठा दर गणक</string>
     <string-array name="length_array">
         <item>Feet</item>
         <item>Meter</item>
@@ -9,4 +9,10 @@
         <item>Per Pand</item>
         <item>Per Acre</item>
     </string-array>
+    <string name="formula1">१ गुंठा = ३३ फूट X ३३ फूट </string>
+    <string name="formula2">१ पांड = २.५ गुंठे </string>
+    <string name="formula3">१ एकर  = ४० गुंठे </string>
+    <string name="formula4">१ एकर  = १६ पांड </string>
+    <string name="formula5">१ हेक्टर = २.५ एकर </string>
+
 </resources>
