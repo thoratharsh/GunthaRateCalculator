@@ -40,5 +40,13 @@ class MainActivity : AppCompatActivity() {
                     .setAction("Action", null).show()
             }
         }
+
+        clearButton.setOnClickListener{ view ->
+            inputLength.text.clear()
+            inputWidth.text.clear()
+            inputRate.text.clear()
+            textViewPrice.text = ""
+            textViewError.text = ""
+        }
     }
 }
