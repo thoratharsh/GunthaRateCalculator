@@ -5,6 +5,7 @@ import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.design.widget.Snackbar
+import android.util.TypedValue
 import android.view.inputmethod.InputMethodManager
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -16,20 +17,28 @@ class MainActivity : AppCompatActivity() {
 
         calculateButton.setOnClickListener { view ->
             if (inputLength.text.toString().isEmpty() && inputWidth.text.toString().isEmpty() && inputRate.text.toString().isEmpty()){
+                textViewError.setTextSize(TypedValue.COMPLEX_UNIT_SP,15f)
                 textViewError.text = "कृपया योग्य लांबी, रुंदी व दर भरा "
             } else if (inputLength.text.toString().isEmpty() && inputWidth.text.toString().isEmpty()){
+                textViewError.setTextSize(TypedValue.COMPLEX_UNIT_SP,15f)
                 textViewError.text = "कृपया योग्य लांबी व रुंदी भरा "
             } else if (inputWidth.text.toString().isEmpty() && inputRate.text.toString().isEmpty()){
+                textViewError.setTextSize(TypedValue.COMPLEX_UNIT_SP,15f)
                 textViewError.text = "कृपया योग्य रुंदी व दर भरा "
             } else if (inputLength.text.toString().isEmpty() && inputRate.text.toString().isEmpty()){
+                textViewError.setTextSize(TypedValue.COMPLEX_UNIT_SP,15f)
                 textViewError.text = "कृपया योग्य लांबी व दर भरा "
             } else if(inputLength.text.toString().isEmpty()){
+                textViewError.setTextSize(TypedValue.COMPLEX_UNIT_SP,15f)
                 textViewError.text = "कृपया योग्य लांबी भरा "
             } else if (inputWidth.text.toString().isEmpty()){
+                textViewError.setTextSize(TypedValue.COMPLEX_UNIT_SP,15f)
                 textViewError.text = "कृपया योग्य रुंदी भरा "
             } else if (inputRate.text.toString().isEmpty()){
+                textViewError.setTextSize(TypedValue.COMPLEX_UNIT_SP,15f)
                 textViewError.text = "कृपया योग्य दर भरा"
             } else {
+                textViewError.setTextSize(TypedValue.COMPLEX_UNIT_SP,0f)
                 textViewError.text = ""
             }
 
@@ -55,6 +64,7 @@ class MainActivity : AppCompatActivity() {
             inputRate.text.clear()
             textViewPrice.text = ""
             textViewError.text = ""
+            textViewError.setTextSize(TypedValue.COMPLEX_UNIT_SP,0f)
         }
 
         otherFormulasButton.setOnClickListener { view ->
